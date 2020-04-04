@@ -10,6 +10,8 @@ for devicelist, names in zip(routers, hostnames) :
     net_connect.enable()
     config_commands = ['hostname ' + names]
     output = net_connect.send_config_set(config_commands)
+    print(output)
+    net_connect.disconnect()
 
 for devicelist, ips in zip(routers, loopbacks) :
     net_connect = ConnectHandler(**devicelist)
@@ -18,6 +20,8 @@ for devicelist, ips in zip(routers, loopbacks) :
                      'ip address ' + ips + ' 255.255.255.0',
                      'descr Created with Python and Netmiko!!']
     output = net_connect.send_config_set(config_commands)
+    print(output)
+    net_connect.disconnect()
 
 
 #Here is the config that is standard among the tunnel routers.
