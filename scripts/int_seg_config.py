@@ -2,7 +2,7 @@
 import sys
 sys.path.append('../inventory')
 from netmiko import ConnectHandler
-from rtr_inv import routers, tunnelrouters, tunneloct, loopbacks, hostnames, singleseg, singlesegoct, singleseglastoct, seg146, octet146, seg79, octet79, seg67, octet67, seg37, octet37, seg13, octet13, seg23, octet23, seg45, octet45, seg58, octet58, seg108, octet108
+from rtr_inv import *
 
 #configure single segment routers
 for devicelist, octets, lastoct in zip(singleseg, singlesegoct, singleseglastoct) :
