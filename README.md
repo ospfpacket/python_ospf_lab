@@ -54,4 +54,8 @@ Will Update More at a later time.
 
 - Interating through 2 lists at the same time can be done with the zip() function. This essentially uses 2 or more same length lists and runs them through a for loop pairing index 0, 1, 2, etc.
 - Inventory File my be in top down order to work through the built out lists.
+<<<<<<< HEAD
 - WSL and VScode will not like the pathing that is used to verify that the variables have actually been imported. The script works even though VScode errors and says the modules cannot be imported.
+=======
+- WSL and VScode will not like the pathing that is used to verify that the variables have actually been imported. The script works even though VScode errors and says the modules cannot be imported.
+>>>>>>> e88fb4857d8780cffd303a1468353e6426595a6a

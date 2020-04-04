@@ -8,7 +8,11 @@ from rtr_inv import routers, hostnames, loopbacks, tunnelrouters
 for devicelist, names in zip(routers, hostnames) :
     net_connect = ConnectHandler(**devicelist)
     net_connect.enable()
-    config_commands = ['hostname ' + names]
+    config_commands = ['hostname ' + names,
+                       'banner login ^',
+                       'Welcome to the OSPFPacket Lab!',
+                       'Happy Learning!!',
+                       '^']
     output = net_connect.send_config_set(config_commands)
     print(output)
     net_connect.disconnect()
