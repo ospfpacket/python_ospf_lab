@@ -135,7 +135,7 @@ for devicelist, lastoctet in zip(tunnelspokes, tunnelspokeoct) :
                        'ip mut 1400',
                        'ip nhrp authentication NHRPPASS',
                        'ip nhrp map 155.1.0.5 169.254.100.5',
-                       'ip nhrp map multicast 169.254.100.5'
+                       'ip nhrp map multicast 169.254.100.5',
                        'ip nhrp network-id 1',
                        'ip nhrp holdtime 300',
                        'ip nhrp nhs 155.1.0.5',
