@@ -5,10 +5,10 @@ Automate the deployment of a 10 router lab with 5 OSPF areas and connected redis
 
 ## Quick Links
 
-- [Platforms Used in the Lab](https://github.com/ospfpacket/ansible-ospf-lab#platforms-used-in-the-lab)
-- [Assumptions](https://github.com/ospfpacket/ansible-ospf-lab#assumptions)
-- [Installation](https://github.com/ospfpacket/ansible-ospf-lab#installation)
-- [Common Issues](https://github.com/ospfpacket/ansible-ospf-lab#common-issues)
+- [Platforms Used in the Lab](https://github.com/ospfpacket/python_ospf_lab#platforms-used-in-the-lab)
+- [Assumptions](https://github.com/ospfpacket/python_ospf_lab#assumptions)
+- [Installation](https://github.com/ospfpacket/python_ospf_lab#installation)
+- [Common Issues](https://github.com/ospfpacket/python_ospf_lab#installation)
 
 ## Platforms Used in the Lab
 
@@ -16,40 +16,42 @@ This lab was run against the following IOL image:
 - L3-ADVENTERPRISEK9-M-15.4-2T.bin
 - L3-ADVENTERPRISEK9-M-15.2-M5.3.bin
 
-This lab was run with the following ansible --version and python --version
+This lab was run with the following python --version
 
 ```
-ansible 2.7.7
-  config file = /etc/ansible/ansible.cfg
-  configured module search path = ['/home/pi/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/lib/python3/dist-packages/ansible
-  executable location = /usr/bin/ansible
-  python version = 3.7.3 (default, Dec 20 2019, 18:57:59) [GCC 8.3.0]
+Python 3.6.9
 ```
 
-The following linux platform used to host Ansible from a raspberry-pi
+The following OS was used for this deployment. **Note this was running on the WSL for Windows 10.
 
 ```
-PRETTY_NAME="Raspbian GNU/Linux 10 (buster)"
-NAME="Raspbian GNU/Linux"
-VERSION_ID="10"
-VERSION="10 (buster)"
-VERSION_CODENAME=buster
-ID=raspbian
+NAME="Ubuntu"
+VERSION="18.04.4 LTS (Bionic Beaver)"
+ID=ubuntu
 ID_LIKE=debian
-HOME_URL="http://www.raspbian.org/"
-SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
-BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
+PRETTY_NAME="Ubuntu 18.04.4 LTS"
+VERSION_ID="18.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=bionic
+UBUNTU_CODENAME=bionic
 ```
 
 ## Assumptions
 
 - Standard connectivity to 10 virtual routers with addresses from 10.0.0.21 - 10.0.0.30
 - SSH access to those routers
-- username with privilege level 15 as there is no 'become' or 'become_method' used in this script
 
 ## Installation
 
+```
+Will Update More at a later time.
+```
+
 ## Common Issues
 
-Using some of the newer Ansible features that were used in 2.9 are not available with the IOL images. Please make sure to use an Ansible version older than 2.9 so you do not run into a situation where the network modules are not deprecated.
+-Interating through 2 lists at the same time can be done with the zip() function. This essentially uses 2 or more same length lists and runs them through a for loop pairing index 0, 1, 2, etc.
+-Inventory File my be in top down order to work through the built out lists.
+-WSL and VScode will not like the pathing that is used to verify that the variables have actually been imported. The script works even though VScode errors and says the modules cannot be imported.
