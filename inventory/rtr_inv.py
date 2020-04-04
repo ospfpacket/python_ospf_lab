@@ -3,7 +3,7 @@ R1 = {
     'host': '10.0.0.21',
     'username': 'daniel',
     'password': 'z00k33p3r',
-    'secret': 'z00k33p3r',
+    'secret': 'z00k33p3r'
 }
 
 R2 = {
@@ -11,7 +11,7 @@ R2 = {
     'host': '10.0.0.22',
     'username': 'daniel',
     'password': 'z00k33p3r',
-    'secret': 'z00k33p3r',
+    'secret': 'z00k33p3r'
 }
 
 R3 = {
@@ -19,7 +19,7 @@ R3 = {
     'host': '10.0.0.23',
     'username': 'daniel',
     'password': 'z00k33p3r',
-    'secret': 'z00k33p3r',
+    'secret': 'z00k33p3r'
 }
 
 R4 = {
@@ -27,7 +27,7 @@ R4 = {
     'host': '10.0.0.24',
     'username': 'daniel',
     'password': 'z00k33p3r',
-    'secret': 'z00k33p3r',
+    'secret': 'z00k33p3r'
 }
 
 R5 = {
@@ -35,7 +35,7 @@ R5 = {
     'host': '10.0.0.25',
     'username': 'daniel',
     'password': 'z00k33p3r',
-    'secret': 'z00k33p3r',
+    'secret': 'z00k33p3r'
 }
 
 R6 = {
@@ -43,7 +43,7 @@ R6 = {
     'host': '10.0.0.26',
     'username': 'daniel',
     'password': 'z00k33p3r',
-    'secret': 'z00k33p3r',
+    'secret': 'z00k33p3r'
 }
 
 R7 = {
@@ -51,7 +51,7 @@ R7 = {
     'host': '10.0.0.27',
     'username': 'daniel',
     'password': 'z00k33p3r',
-    'secret': 'z00k33p3r',
+    'secret': 'z00k33p3r'
 }
 
 R8 = {
@@ -59,15 +59,15 @@ R8 = {
     'host': '10.0.0.28',
     'username': 'daniel',
     'password': 'z00k33p3r',
-    'secret': 'z00k33p3r',
+    'secret': 'z00k33p3r'
 }
 
 R9 = {
     'device_type': 'cisco_ios',
     'host': '10.0.0.29',
     'username': 'daniel',
-    'password': 'z00k33p3r'
-    'secret': 'z00k33p3r',
+    'password': 'z00k33p3r',
+    'secret': 'z00k33p3r'
 }
 
 R10 = {
@@ -75,7 +75,7 @@ R10 = {
     'host': '10.0.0.30',
     'username': 'daniel',
     'password': 'z00k33p3r',
-    'secret': 'z00k33p3r',
+    'secret': 'z00k33p3r'
 }
 
 testing = [R1, R2]
