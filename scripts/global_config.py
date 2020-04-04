@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import sys
-sys.path.append('../inventory')
+sys.path.append('./inventory')
 from netmiko import ConnectHandler
 from rtr_inv import loopbacks, hostnames, routers
 
