@@ -132,7 +132,7 @@ for devicelist, lastoctet in zip(tunnelspokes, tunnelspokeoct) :
     net_connect.enable()
     config_commands = ['interface Tunnel0',
                        'ip address 155.1.0.' + lastoctet + ' 255.255.255.0',
-                       'ip mut 1400',
+                       'ip mtu 1400',
                        'ip nhrp authentication NHRPPASS',
                        'ip nhrp map 155.1.0.5 169.254.100.5',
                        'ip nhrp map multicast 169.254.100.5',
@@ -154,7 +154,7 @@ net_connect = ConnectHandler(**R5)
 net_connect.enable()
 config_commands = ['interface Tunnel0',
                    'ip address 155.1.0.5 255.255.255.0',
-                   'ip mut 1400',
+                   'ip mtu 1400',
                    'ip nhrp authentication NHRPPASS',
                    'ip nhrp map multicast dynamic',
                    'ip nhrp network-id 1',
